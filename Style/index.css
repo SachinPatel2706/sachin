@@ -1,0 +1,632 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.backImg{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: url("../Images/bg3.jpg") transparent no-repeat fixed;
+    background-size: 100% 100%; 
+ }
+ 
+.mainDiv{
+    width: 100%;
+    min-height: 92.3vh;
+    height: 100%;
+}
+
+ /* ----------------------------------------NavBar--------------------------------------------- */
+ .navBar {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 2, 2, 0.233);
+    transition: top 0.4s;  
+}
+
+.navBar ul {
+    text-align: end;
+    list-style-type: none;
+    margin-right: 6rem;
+}
+
+.navBar ul li {
+    display: inline-block;
+    padding: 0.4rem 0.4rem;
+    position: relative;
+}
+
+.navBar ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6rem 0.4rem;
+    text-decoration: none;
+    border-radius: 1.6rem;
+    font-size: 2.4rem;
+}
+.icon{
+    font-size: 2rem;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.333);
+}
+
+.navBar ul li a:hover,
+.navBar ul li a:focus,
+.navBar ul li a:active {
+    background-color: white;
+    letter-spacing: 0.12rem;
+    color: rgba(255, 0, 0, 0.545);
+}
+
+.navBar ul ul {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.190);
+    left: 0;
+    top: 100%;
+    display: none;
+    border-radius: 0.6rem;
+}
+
+.navBar ul li:hover>ul {
+    display: block;
+}
+
+.navBar ul ul li a {
+    font-size: 2.0rem;
+    padding: 0.6rem;
+}
+
+.navBar ul ul li a:hover,
+.navBar ul ul li a:active,
+.navBar ul ul li a:focus {
+    letter-spacing: 0.1rem;
+    background-color: white;
+    color: rgba(255, 0, 0, 0.545);
+}
+/* -----------------------------------------Home--------------------------------------------------- */
+
+.profile{
+    width: 30rem;
+    background-color: rgba(28, 29, 31, 0.373);
+    border-radius: 6%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    padding: 2rem 0;
+   
+}
+img{
+    height: 22rem;
+    border-radius: 70%;
+}
+
+.profilText h2{
+    color: white;
+    font-size: 3.4rem;
+    font-weight: 50;
+}
+.profilText h3{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.profilText p{
+    color: white;
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+.profileFonts{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+i{
+    color: white;
+    cursor: pointer; 
+    margin: 0.8rem;
+    
+}
+
+/* .....................................div_About.................................... */
+
+.myAbout::after{
+    content: "";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 6rem;
+    background-image: url('../Images/sachin3.jpg');
+    background-size: 100% 100%;
+    border-radius: 50%;
+    margin-left: 1%;
+}
+
+/* .....................................div_Covid19 for India.................................... */
+
+#covid19_India h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0rem 0.3rem 0.3rem  white,
+                     0rem 0.3rem 0.3rem  white,
+                     0rem 0.3rem 0.3rem  white, 
+                     0rem 0.3rem 0.3rem  black                 
+}
+
+.table_Div{
+    margin: 1.5rem 2rem;
+    background-color: rgba(117, 116, 30, 0.333);
+    border: transparent;
+    border: 2px solid black;
+    border-radius: 2rem;
+    overflow-x:auto;
+}
+.table_Div h3{
+    text-align: end;
+    margin-right: 10rem;
+}
+.tableIndia{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableIndia .state_List tr td:nth-child(1) {
+    font-weight: bold; 
+}
+.tableIndia .state_List:nth-child(1){
+    background-color: red;
+}
+.tableIndia .state_List:nth-child(even){
+    background-color: rgba(141, 23, 23, 0.111);
+}
+
+.tableIndia .state_List tr:hover{
+    background-color: rgba(221, 221, 221, 0.333);
+    letter-spacing: 0.1rem;
+       
+}
+
+.tableIndia th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: 1px solid #ddd;
+    background-color: rgba(0, 128, 0, 0.333);
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+  }
+  .tableIndia .state_List td{
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+
+/* .....................................div_Covid19 for World.................................... */
+
+
+#covid19_World h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0rem 0.3rem 0.3rem  white,
+                     0rem 0.3rem 0.3rem  white,
+                     0rem 0.3rem 0.3rem  white, 
+                     0rem 0.3rem 0.3rem  black                 
+}
+
+.table_DivWorld{
+    margin: 1.5rem 2rem;
+    background-color: rgba(117, 116, 30, 0.333);
+    border: transparent;
+    border: 2px solid black;
+    border-radius: 2rem;
+    overflow-x:auto;
+}
+.table_DivWorld h3{
+    text-align: end;
+    margin-right: 10rem;
+}
+.tableWorld{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableWorld .contry_List tr td:nth-child(1) {
+    font-weight: bold; 
+}
+
+
+.tableWorld .contry_List tr:hover{
+    background-color: rgba(221, 221, 221, 0.333);
+    letter-spacing: 0.1rem;
+       
+}
+
+.tableWorld th {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: 1px solid #ddd;
+    background-color: rgba(0, 128, 0, 0.333);
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+  }
+  .tableWorld .contry_List td{
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+/* .....................................div_KeepNotes.................................... */
+
+.centre_Div{
+    float: left;
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 1%;
+    background-color: white;
+    background: transparent;
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.1rem black;
+    border-radius: 1.0rem;
+}
+
+.centre_Div h2{
+        font-weight: 700;
+        font-size: 2.1rem;
+        text-align: center;
+        background: transparent;
+        color: rgba(255, 255, 0, 0.637);
+        text-shadow: 0rem 0.3rem 0.3rem  black,
+                     0rem 0.3rem 0.3rem  black,
+                     0rem 0.3rem 0.3rem  black, 
+                     0rem 0.3rem 0.3rem  black                 
+}
+
+.add_Title{
+    margin: 0.3rem;
+    margin-top: 1.0rem;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    text-transform: capitalize;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    border-bottom: 0.2rem solid rgba(255, 255, 0, 0.637);
+    width: 90%; 
+    color: white;
+}
+.add_Note{
+    margin: 0.3rem;
+    padding: 0.6rem;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 0.6rem;
+    margin-bottom: 2.0rem;
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-bottom: 0.2rem solid rgba(255, 255, 0, 0.637);
+    color: white;
+}
+button {
+    font-weight: 700;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+.btn_Add{
+    border-radius: 10%;
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+    background: transparent;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+button.btn_Add:hover , button.btn_Add:focus, button.btn_Add:active{
+    background-color: #5ee65e;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+}
+
+.div_Add{
+    display: block;
+    width: 38%;
+    height: 30%;
+    margin-left: 61%;
+    border-radius: 1.0rem;
+}
+
+.notes_Div{
+    float: left;
+    width: 100%;
+    margin: 1rem 0;
+}
+.notesList_Div{
+    display: inline-block;
+    margin: 0.6rem 0.6rem;
+    width: 15%;
+    max-height: 10%;
+    padding: 0.2rem 0;
+    background-color: wheat;
+    border:  0.2rem solid rgba(0, 0, 0, 0.397);
+    border-radius: 0.6rem;
+    text-transform: capitalize;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem black;
+    overflow: hidden;
+}
+.show_Title{
+    padding: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 2.1rem;
+   
+}
+.show_note{
+    padding: 0.6rem;
+    font-size: 1.8rem;
+}
+.note_Delete{
+    border-radius: 50%;
+    padding: 0.2rem;
+    border-radius: 100%;
+    width: 15%;
+    margin-left: 16rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: rgba(255, 255, 0, 0.418);
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);  
+}
+.note_Delete:hover{
+    background-color: red;
+    font-size: 1.8rem;
+}
+
+
+/* .....................................div_Blog.................................... */
+
+.myBlogDiv{
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.633);
+    margin: 0.6rem 33rem;
+    border-radius: 0.6rem;
+    padding-bottom: 1rem;
+    padding-top: 0.2rem;    
+}
+.myBlogDiv .content_Div{
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+    margin: 0.6rem;
+    margin-bottom: 0.6rem; 
+    padding-bottom: 2rem;  
+}
+.myBlogDiv h2{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem 0.3rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.myBlogDiv p{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.myBlogDiv .content_Div .blog_Footer{
+    margin-right: 1.6rem;
+}
+
+.myBlogDiv .content_Div .blog_Footer .time_Ago{
+    color: black;
+    font-weight: 600;
+    float: right;
+    top: 0;
+    font-size: 1.13rem;
+}
+.myBlogDiv .content_Div p a{
+    color: blue;
+    text-align: end;
+    font-size: 1.6rem;
+}
+.myBlogDiv .content_Div p a{
+    cursor: pointer;
+}
+
+
+/* ===============================================media Query===================================== */
+
+@media (max-width: 768px){
+
+    #covid19_India h2{
+        font-size: 2.5rem;             
+    }
+    .table_Div h3{
+        font-size: 1.2rem; 
+    }
+
+    .tableIndia th {
+        font-size: 1.6rem;
+      }
+      .tableIndia .state_List td{
+        font-size: 1.4rem;
+    }
+
+    #covid19_World h2{
+        font-size: 2.5rem;             
+    }
+    .table_DivWorld h3{
+        font-size: 1.2rem; 
+    }
+
+    .tableWorld th {
+        font-size: 1.6rem;
+      }
+      .tableWorld .contry_List td{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 580px){
+    .mainDiv{
+        min-height: 100vh;
+    }
+    .navBar ul {
+        display: none;
+    }
+    .navBar .icon {
+        float: right;
+        display: block;
+    }
+
+    navBar.responsive {position: relative;}
+    .navBar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navBar.responsive ul {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .navBar.responsive ul ul{
+        display: none;
+        position: relative;
+    }
+    .navBar.responsive ul li{
+        display: block; 
+    }
+
+    .navBar ul li a, .navBar ul ul li a {
+        font-size: 1.9rem;
+        padding: 0.2rem;
+    }
+
+    .profile{
+        margin-top: 6rem;
+    }
+
+    .myAbout{
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+    }    
+
+
+    #covid19_India h2{
+        font-size: 2.2em;             
+    }
+    .table_Div h3{
+        font-size: 0.9rem; 
+    }
+
+    .tableIndia th {
+        font-size: 1.2rem;
+      }
+      .tableIndia .state_List td{
+        font-size: 1.0rem;
+        padding: 0.8rem;
+    }
+
+    #covid19_World h2{
+        font-size: 2.2em;             
+    }
+    .table_DivWorld h3{
+        font-size: 0.9rem; 
+    }
+
+    .tableWorld th {
+        font-size: 1.2rem;
+      }
+    .tableWorld .contry_List td{
+        font-size: 1.0rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 468px){
+    #covid19_India h2{
+        font-size: 2.0em;             
+    }
+    .table_Div h3{
+        font-size: 0.7rem; 
+    }
+    .tableIndia th {
+        font-size: 0.9rem;
+      }
+      .tableIndia .state_List td{
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    #covid19_World h2{
+        font-size: 2.0em;             
+    }
+    .table_DivWorld h3{
+        font-size: 0.7rem; 
+    }
+    .tableWorld th {
+        font-size: 0.9rem;
+      }
+      .tableWorld .contry_List td{
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 375px){
+    .tableIndia th {
+        font-size: 0.7rem;
+      }
+      .tableIndia .state_List td{
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+
+    .tableWorld th {
+        font-size: 0.7rem;
+      }
+      .tableWorld .contry_List td{
+        font-size: 0.7rem;
+        padding: 0.6rem;
+    }
+    
+
+}
